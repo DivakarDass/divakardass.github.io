@@ -12,7 +12,7 @@ body{
 }
 
 .nav-content{
-	min-height : 80px;
+	min-height : 50px;
 	background-color: #177645;
 }
 
@@ -103,7 +103,25 @@ body{
 
 .navbarDropdown{
 	background-color: lightgreen;
-	left: auto; right: auto;
+	left: auto;
+	right: auto;
+	margin-top: 0px !important;
+    border: 0;
+    border-radius: 0;
+}
+
+.navHeight{
+	height: 50px;
+}
+
+.navHeight li.show{
+	height: 100%;
+    padding-top: 7px;
+    background: lightgreen;
+}
+
+.navHeight li.show a{
+	color: black !important;
 }
 
 /*.justify-content-center .dropdown-menu {
