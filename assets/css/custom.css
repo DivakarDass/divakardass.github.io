@@ -3,6 +3,10 @@ body{
 	overflow-x: hidden;
 }
 
+.navbar-main{
+	height: 130px;
+}
+
 .nav-info{
 	background-color : #fff!important;
 }
@@ -20,25 +24,20 @@ body{
 	color: #fff !important;
 }
 
-/*.navbar-main{
-	border-bottom: 2px solid #177645;
-}*/
-
 .header{
 	font-weight: bolder;
     color: #D8251B;
 }
 
 .tagline{
-	font-size: 12px;
-    float: right;
+	font-size: 11px;
     color: #177645;
     font-weight: bold;
 }
 
 .resize_image{
- width: 80px;
- height:80px;
+ width: 130px;
+ height:130px;
 }
 
 .hospital_image{
@@ -89,7 +88,7 @@ body{
 
 .gallery-img-tag{
 	width: 18rem;
-	height: 150px;
+	height: 200px;
 }
 
 .webicons{
@@ -124,7 +123,15 @@ body{
 	color: black !important;
 }
 
-/*.justify-content-center .dropdown-menu {
-   left: 30%;
-   transform: translateX(-30%);
-}*/
+.navbarDropdown .dropdown-header{
+	color: #177645 !important;
+	font-weight: bolder;
+}
+
+.contactDetailsBorder{
+	border-top: 1px solid #177645;
+}
+
+.alignLeft{
+	left: 2%;
+}

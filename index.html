@@ -15,18 +15,27 @@
   <body>
 
     <div class="row navbar-main">
-      <div class="col-1 cutom-col-1 ml-3 p-0">
+      <div class="col-3 p-0 mt-3 text-center">
         <a href="#">
           <img class="resize_image" src="assets/images/pranav_logo.jpg">
         </a>
       </div>
-      <div class="col-4">
-        <h5 class="header mt-3">PRANAV SUPER SPECIALITY HOSPITAL</h2>
-        <span class="tagline">ADDING HEALTHY YEARS TO QUALITY LIFE</span>
+      <div class="col-6 p-0 mt-3 text-center">
+        <h1 class="header mt-3 mb-0">PRANAV HOSPITALS</h2>
+        <div class="tagline">( ADDING HEALTHY YEARS TO QUALITY LIFE )</div>
       </div>
-      <div class="col-6 p-0">
+      <div class="col-3 p-0 mt-3 text-center">
+        <a href="#">
+          <img class="resize_image" src="assets/images/entry_level.jpg">
+        </a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-3 p-0"></div>
+      <div class="col-6 p-0 contactDetailsBorder">
         <!-- Nav Info/Address Bar -->
-        <nav class="navbar navbar-expand-md nav-info navbar-dark bg-dark p-1">
+        <nav class="navbar navbar-expand-md nav-info navbar-dark bg-dark p-0">
 
           <!-- Toggler/collapsibe Button -->
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar1">
@@ -34,7 +43,7 @@
           </button>
 
           <!-- Navbar links -->
-          <div class="collapse navbar-collapse justify-content-center pl-2 mt-2" id="collapsibleNavbar1">
+          <div class="collapse navbar-collapse justify-content-center pl-2 mt-1" id="collapsibleNavbar1">
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link" href="#">
@@ -55,11 +64,7 @@
           </div>
         </nav>
       </div>
-      <div class="col-1 cutom-col-1 ml-3 p-0">
-        <a href="#">
-          <img class="resize_image" src="assets/images/entry_level.jpg">
-        </a>
-      </div>
+      <div class="col-3 p-0"></div>
     </div>
 
     <nav class="navbar navbar-expand-sm nav-content sticky-top navbar-light p-0">
@@ -71,15 +76,21 @@
       <div class="collapse nav-content-div navbar-collapse pl-2 justify-content-center"
           id="collapsibleNavbar2">
         <ul class="navbar-nav justify-content-center text-center navHeight">
+          <li class="nav-item mx-5 align-self-center" id="home_dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"   aria-haspopup="true" aria-expanded="false">
+              HOME
+            </a>
+            <div class="dropdown-menu navbarDropdown" aria-labelledby="navbarDropdown">
+              <h6 class="dropdown-header">VISION</h6>
+              <a class="dropdown-item" href="#">ADDING HEALTHY YEARS TO QUALITY LIFE</a>
+              <div class="dropdown-divider"></div>
+              <h6 class="dropdown-header">MISSION</h6>
+              <a class="dropdown-item" href="#">KNOWLEDGE, TEAM WORK, DEDICATION, DELIVERANCE TO THE SOCIETY</a>
+            </div>
+          </li>
           <li class="nav-item mx-5 align-self-center" id="doctors_dropdown"></li>
           <li class="nav-item mx-5 align-self-center" id="departments_dropdown"></li>
           <li class="nav-item mx-5 align-self-center" id="services_dropdown"></li>
-          <li class="nav-item mx-5 align-self-center">
-            <a class="nav-link" href="#">MISSION</a>
-          </li>
-          <li class="nav-item mx-5 align-self-center">
-            <a class="nav-link" href="#">VISION</a>
-          </li>
         </ul>
       </div>
     </nav>
@@ -202,10 +213,6 @@
       <% _.each(images, function(image){ %>
         <div class="card pull-left m-2">
           <img class="gallery-img-tag" src="assets/hospital_images/<%- image %>" alt="<%- image %>">
-          <div class="card-body">
-            <h5 class="card-title"><%- image.split('.')[0].toUpperCase() %></h5>
-            <p class="card-text">Some description about this.</p>
-          </div>
         </div>
       <% }); %>
     </script>
@@ -214,11 +221,28 @@
       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <%- key %>
       </a>
-      <div class="dropdown-menu navbarDropdown" aria-labelledby="navbarDropdown">
-        <% _.each(values, function(val){ %>
-          <a class="dropdown-item" href="#"><%- val %></a>
-        <% }); %>
-      </div>
+      <% if(key == 'MEDICAL TEAM') { %>
+        <div class="dropdown-menu navbarDropdown <% if(key == 'MEDICAL TEAM') { %> alignLeft <% } %>" aria-labelledby="navbarDropdown">
+          <div class="row">
+            <div class="col-5">
+              <% _.each(values['doctors1'], function(val){ %>
+                <a class="dropdown-item" href="#"><%- val %></a>
+              <% }); %>
+            </div>
+            <div class="col-6">
+              <% _.each(values['doctors2'], function(val){ %>
+                <a class="dropdown-item" href="#"><%- val %></a>
+              <% }); %>
+            </div>
+          </div>
+        </div>
+      <% } else { %>
+        <div class="dropdown-menu navbarDropdown" aria-labelledby="navbarDropdown">
+          <% _.each(values, function(val){ %>
+            <a class="dropdown-item" href="#"><%- val %></a>
+          <% }); %>
+        </div>
+      <% } %>
     </script>
 
     <script type="text/javascript">
@@ -227,8 +251,10 @@
           'Dental.jpg', 'Endoscopy.jpg', 'ICU.jpg', 'I floor room.jpg', 'II floor room.jpg', 'Lab.jpg',
           'Labour room.jpg', 'NICU.jpg', 'OT.jpg', 'Pharmacy.jpg', 'Scan room.jpg', 'Xray.jpg'];
 
-        var doctors = ['DR. MURUGAPANDIYAN MD.,DM (CARDIOLOGIST)', 'DR. M. PREETHI, M.S ( OBSTETERIC AND GYNACOLOGY)', 'DR. T. SRINIVASAN, MD.,DCH ( PAEDIATRIC )', 'DR. S. SAMYUKTHA, MDS.,', 'DR.J. SATHEESH, MS.,DNB.,MCH.,( GASTRO ENTEROLOGIST )', 'DR. MARAGATHA MEENAKSHI, MBBS.,DGO., ( OBSTETERIC AND GYNACOLOGIST)', 'DR. R. RAVICHANDRAN, MS, MCH., ( PAEDIATRIC SURGEON )', 'DR. SIVAPRAKASAM ( PULMONOLOGIST )', 'DR.K.V. ASAITHAMBI, MD ( GENERAL PHYSICIAN )', 'DR. SURESH, MS ( ORTHOPAEDICIAN )',
-          'DR. VINOTH, MD., MEM., ( EMERGENCY CRITICAL )', 'DR.S. PRABHAKAR, MS., MCH ( UROLOGIST )'];
+        var doctors1 = ['DR. MURUGAPANDIYAN MD.,DM (CARDIOLOGIST)', 'DR. M. PREETHI, M.S ( OBSTETERIC AND GYNACOLOGY)',  'DR.J. SATHEESH, MS.,DNB.,MCH.,( GASTRO ENTEROLOGIST )',  'DR. R. RAVICHANDRAN, MS, MCH., ( PAEDIATRIC SURGEON )', 'DR. SIVAPRAKASAM ( PULMONOLOGIST )',  'DR.S. PRABHAKAR, MS., MCH ( UROLOGIST )'];
+
+        var doctors2 = ['DR. T. SRINIVASAN, MD.,DCH ( PAEDIATRIC )', 'DR. S. SAMYUKTHA, MDS.,',
+          'DR. MARAGATHA MEENAKSHI, MBBS.,DGO., ( OBSTETERIC AND GYNACOLOGIST)', 'DR.K.V. ASAITHAMBI, MD ( GENERAL PHYSICIAN )', 'DR. SURESH, MS ( ORTHOPAEDICIAN )', 'DR. VINOTH, MD., MEM., ( EMERGENCY CRITICAL )'];
 
         var departments = ['ANESTHESIA', 'CARDIOLOGY', 'CRITICAL CARE', 'DENTAL', 'DIABETOLOGY', 'GASTRO ENTEROLOGY', 'GASTRO INTESTINAL SURGERY', 'GENERAL MEDICINE', 'OBSTETRIC AND GYNACOLOGY', 'ORTHOPAEDIC MEDICINE', 'PAEDIATRIC', 'SONOLOGY', 'UROLOGY', 'SURGICAL ONCOLOGY'];
 
@@ -248,13 +274,14 @@
         $('#pills-gallery').html(gallery);
 
         var navMainDropdownTmpl = _.template($('#navMainDropdown').html());
-        var navMainDropdown = navMainDropdownTmpl({'key': 'DOCTORS', 'values': doctors});
+        var navMainDropdown = navMainDropdownTmpl({'key': 'MEDICAL TEAM',
+          'values': {'doctors1': doctors1, 'doctors2': doctors2 }});
         $('#doctors_dropdown').html(navMainDropdown);
 
         navMainDropdown = navMainDropdownTmpl({'key': 'DEPARTMENTS', 'values': departments});
         $('#departments_dropdown').html(navMainDropdown);
 
-        navMainDropdown = navMainDropdownTmpl({'key': 'SERVICES', 'values': services});
+        navMainDropdown = navMainDropdownTmpl({'key': '24 HOURS HEALTH CARE SERVICES', 'values': services});
         $('#services_dropdown').html(navMainDropdown);
 
       });
