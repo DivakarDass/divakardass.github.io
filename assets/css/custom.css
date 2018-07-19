@@ -1,0 +1,112 @@
+body{
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.nav-info{
+	background-color : #fff!important;
+}
+
+.navbar .nav-link{
+	color: #177645 !important;
+}
+
+.nav-content{
+	min-height : 80px;
+	background-color: #177645;
+}
+
+.nav-content-div .nav-link{
+	color: #fff !important;
+}
+
+/*.navbar-main{
+	border-bottom: 2px solid #177645;
+}*/
+
+.header{
+	font-weight: bolder;
+    color: #D8251B;
+}
+
+.tagline{
+	font-size: 12px;
+    float: right;
+    color: #177645;
+    font-weight: bold;
+}
+
+.resize_image{
+ width: 80px;
+ height:80px;
+}
+
+.hospital_image{
+ width: 100%;
+ max-height:100%;
+ object-fit: cover;
+}
+
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+  display: flex;
+}
+
+.carouselItemCustom{
+	width: 100%;
+	height: 500px;
+}
+
+.nav-content-div a{
+	font-weight: bold;
+}
+
+.cutom-col-1{
+	max-width: 6.3%;
+}
+
+.gallery_cont li{
+	border: 1px solid white;
+}
+
+.gallery_cont a.active{
+	background-color: #177645 !important;
+}
+
+.gallery_cont a{
+	background: lightgreen;
+	border-radius: 0 !important;
+	color: white;
+}
+
+#pills-tabContent{
+	min-height: 300px;
+	max-height: 600px;
+	overflow-y: scroll;
+	background: #f8f9fa;
+}
+
+.gallery-img-tag{
+	width: 18rem;
+	height: 150px;
+}
+
+.webicons{
+	width: 40px;
+	height: 40px;
+}
+
+.location_cont{
+	background: lightgreen;
+}
+
+.navbarDropdown{
+	background-color: lightgreen;
+	left: auto; right: auto;
+}
+
+/*.justify-content-center .dropdown-menu {
+   left: 30%;
+   transform: translateX(-30%);
+}*/

@@ -1,115 +1,265 @@
-<!DOCTYPE html>
-<html>
-
+<!doctype html>
+<html lang="en">
   <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Divakar Dass : " />
+    <title>Pranav Hospital</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css">
-    <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css"> 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/bootstrap-responsive.min.css">
-    <link rel="stylesheet" href="stylesheets/mystyle.css">
+    <!-- CSS Imports -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/custom.css" />
 
-    <title>Divakar Dass</title>
   </head>
 
   <body>
 
-    <!-- HEADER -->
-    <div class="row-fluid contentHeader">
-      <div class="offset2 span5" style="padding:10px;">
-        <h1>Divakar Dass</h1>
+    <div class="row navbar-main">
+      <div class="col-1 cutom-col-1 ml-3 p-0">
+        <a href="#">
+          <img class="resize_image" src="assets/images/pranav_logo.jpg">
+        </a>
       </div>
-      <div class="span5" style="margin-top:30px;">
-        <span>Find me on : </span>
-        <span>
-          <a href="http://linkedin.com/in/divakardass" target="_blank">
-            <img src="images/linkedin.svg" alt="LinkedIn" class="webicons" />
-          </a>
-        </span>
-        <span>
-          <a href="https://github.com/DivakarDass" target="_blank">
-            <img src="images/github.svg" alt="GitHub" class="webicons" />
-          </a>
-        </span>
-        <span>
-          <a href="https://www.kaggle.com/divakardass" target="_blank">
-            <img src="images/kaggle.png" alt="Kaggle" class="webicons" />
-          </a>
-        </span>
-        <span>
-          <a href="https://plus.google.com/112077246929433868090/posts" target="_blank">
-            <img src="images/googleplus.svg" alt="GooglePlus" class="webicons" />
-          </a>
-        </span>
-        <span>
-          <a href="http://www.quora.com/Divakar-Dass-1" target="_blank">
-            <img src="images/quora.svg" alt="Quora" class="webicons" />
-          </a>
-        </span>
-        <span>
-          <a href="https://www.facebook.com/divakar.dass" target="_blank">
-            <img src="images/facebook.svg" alt="Facebook" class="webicons" />
-          </a>
-        </span>
-        <span>
-          <a href="https://twitter.com/DivakarDass" target="_blank">
-            <img src="images/twitter.svg" alt="Twitter" class="webicons" />
-          </a>
-        </span>
+      <div class="col-4">
+        <h5 class="header mt-3">PRANAV SUPER SPECIALITY HOSPITAL</h2>
+        <span class="tagline">ADDING HEALTHY YEARS TO QUALITY LIFE</span>
+      </div>
+      <div class="col-6 p-0">
+        <!-- Nav Info/Address Bar -->
+        <nav class="navbar navbar-expand-md nav-info navbar-dark bg-dark p-1">
+
+          <!-- Toggler/collapsibe Button -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar1">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navbar links -->
+          <div class="collapse navbar-collapse justify-content-center pl-2 mt-2" id="collapsibleNavbar1">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fa fa-envelope mr-2"></i>pranavsalem@gmail.com
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fa fa-map-marker mr-2"></i>Locate Us
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fa fa-phone mr-2"></i>+91 9698449902/+91 7708568280
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="col-1 cutom-col-1 ml-3 p-0">
+        <a href="#">
+          <img class="resize_image" src="assets/images/entry_level.jpg">
+        </a>
       </div>
     </div>
 
-    <!-- MAIN CONTENT -->
-    <div class="row-fluid contentBackground">      
-      <div class="span8" style="margin-left:20px;margin-top:15px;">
-        <div class="offset3">
-          <h3 style="font-size:20px;">Being the richest man in the cemetery doesn't matter to me. Going to bed at night saying we've done something wonderful, that's what matters to me.</h3>
-        </div>
-        <div class="quoteAuthor"> - Steve Jobs</div>
+    <nav class="navbar navbar-expand-sm nav-content sticky-top navbar-light p-1">
+      <!-- Toggler/collapsibe Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar2">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Navbar links -->
+      <div class="collapse nav-content-div navbar-collapse pl-2 justify-content-center"
+          id="collapsibleNavbar2">
+        <ul class="navbar-nav justify-content-center text-center">
+          <li class="nav-item mx-5 align-self-center" id="doctors_dropdown"></li>
+          <li class="nav-item mx-5 align-self-center" id="departments_dropdown"></li>
+          <li class="nav-item mx-5 align-self-center" id="services_dropdown"></li>
+          <li class="nav-item mx-5 align-self-center">
+            <a class="nav-link" href="#">MISSION</a>
+          </li>
+          <li class="nav-item mx-5 align-self-center">
+            <a class="nav-link" href="#">VISION</a>
+          </li>
+        </ul>
       </div>
-      <div class="span2" style="width:11%;">
-        <img src="images/divakardass.png" alt="DivakarDass" class="imageContent" />
+    </nav>
+
+    <div class="container">
+      <div id="demo" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators"></ul>
+
+        <!-- The slideshow -->
+        <div class="carousel-inner" role="listbox"></div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+
       </div>
     </div>
 
-    <div class="row-fluid" style="margin-bottom: 100px;">
-      <div class="offset2 span5" style="padding:15px;">
-        <h3>I'm Divakar Dass</h3>
-        <div class="contentText">
-          <span>Software Engineer. Passionate about programming and technology. Much interested in learning and experiencing different software technologies.</span>
+    <div class="container-fluid my-2 gallery_cont">
+      <ul class="nav nav-pills nav-fill" id="pills-tab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="pills-about-us-tab" data-toggle="pill" href="#pills-about-us" role="tab" aria-controls="pills-about-us" aria-selected="false">ABOUT US</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="pills-gallery-tab" data-toggle="pill" href="#pills-gallery" role="tab" aria-controls="pills-gallery" aria-selected="false">GALLERY</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="pills-mission-tab" data-toggle="pill" href="#pills-mission" role="tab" aria-controls="pills-mission" aria-selected="true">MISSION</a>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade p-3 show active" id="pills-about-us" role="tabpanel"
+          aria-labelledby="pills-about-us-tab">
+          <b>This is some RANDOM text.</b>
+          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
         </div>
-      </div>
-      <div class="span3" style="padding:10px;line-height:25px;margin-top:20px;">
-        <div class="aboutMeHeader">About me</div>
-        <legend></legend>
-        <div>Software Engineer at</div>
-        <div class="aboutContent">
-          <a href="http://www.tataatsu.com">Tataatsu Idealabs</a>
+        <div class="tab-pane fade p-3" id="pills-gallery" role="tabpanel"
+          aria-labelledby="pills-gallery-tab">
         </div>
-        <legend></legend>
-        <div>Email</div>
-        <div class="aboutContent">
-          divakardass@yahoo.com
+        <div class="tab-pane fade p-3" id="pills-mission" role="tabpanel"
+          aria-labelledby="pills-mission-tab">
+          KNOWLEDGE, TEAM WORK, DEDICATION, DELIVERANCE TO THE SOCIETY
         </div>
-        <legend></legend>
-        <div>Mobile No</div>
-        <div class="aboutContent">
-          +91 8904117464
-        </div>
-        <legend></legend>
       </div>
     </div>
 
-    <!-- FOOTER -->
-    <div id="footer_wrap" class="outer" style="position:fixed;bottom:0;">
-      <footer class="inner">
-        <p style="text-align:center;">This site is built by me using open source libraries.</p>
-      </footer>
+    <div class="row location_cont">
+      <div class="col-6">
+        <iframe class="m-3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.353786142422!2d78.14045184987874!3d11.669320091678786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babf046668d7e13%3A0x97fa01f9e8e34e24!2sPranav+Hospital!5e0!3m2!1sen!2sin!4v1531974133754" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+      <div class="col-6">
+        <div class="card pull-left m-3">
+          <div class="card-body">
+            <h5 class="card-title">ADDRESS</h5>
+            <p class="card-text">
+              <p>108/38,</p>
+              <p>BRINDAVAN ROAD,</p>
+              <p>OPP. NEW BUS STAND, </p>
+              <p>( NEAR PONNUSAMY GOUNDER KALYANA MANDAPAM )</p>
+              <p>SALEM - 636 004</p>
+            </p>
+          </div>
+        </div>
+        <div class="card pull-left m-3">
+          <div class="card-body">
+            <h5 class="card-title">FOLLOW US ON</h5>
+            <p class="card-text">
+              <a class="m-5" href="#" target="_blank">
+                <img src="assets/images/facebook.svg" alt="Facebook" class="webicons" />
+              </a>
+              <a class="m-5" href="#" target="_blank">
+                <img src="assets/images/twitter.svg" alt="Twitter" class="webicons" />
+              </a>
+              <a class="m-5" href="#" target="_blank">
+                <img src="assets/images/googleplus.svg" alt="GooglePlus" class="webicons" />
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
 
-    
+    <!-- Javascript Imports -->
+    <script src="assets/js/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="assets/js/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="assets/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="assets/js/underscore-min.js" crossorigin="anonymous"></script>
+
+    <script type="text/template" id="carouselInner">
+      <% _.each(images, function(image, index){ %>
+        <% if(index == 0) { %>
+          <div class="carousel-item carouselItemCustom active">
+            <img class="hospital_image" src="assets/hospital_images/<%- image %>" alt="<%- image %>">
+          </div>
+        <% } else { %>
+          <div class="carousel-item carouselItemCustom">
+            <img class="hospital_image" src="assets/hospital_images/<%- image %>" alt="<%- image %>">
+          </div>
+        <% } %>
+      <% }); %>
+    </script>
+
+    <script type="text/template" id="carouselIndicators">
+      <% _.each(images, function(index){ %>
+        <% if(index == 0) { %>
+          <li data-target="#demo" data-slide-to="<%- index %>" class="active"></li>
+        <% } else { %>
+          <li data-target="#demo" data-slide-to="<%- index %>"></li>
+        <% } %>
+      <% }); %>
+    </script>
+
+    <script type="text/template" id="gallery">
+      <% _.each(images, function(image){ %>
+        <div class="card pull-left m-2">
+          <img class="gallery-img-tag" src="assets/hospital_images/<%- image %>" alt="<%- image %>">
+          <div class="card-body">
+            <h5 class="card-title"><%- image.split('.')[0].toUpperCase() %></h5>
+            <p class="card-text">Some description about this.</p>
+          </div>
+        </div>
+      <% }); %>
+    </script>
+
+    <script type="text/template" id="navMainDropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <%- key %>
+      </a>
+      <div class="dropdown-menu navbarDropdown" aria-labelledby="navbarDropdown">
+        <% _.each(values, function(val){ %>
+          <a class="dropdown-item" href="#"><%- val %></a>
+        <% }); %>
+      </div>
+    </script>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        var hospital_images = ['front.jpg', 'waiting_area.jpg', 'Reception.jpg', 'staff.jpg', 'Casualty.jpg',
+          'Dental.jpg', 'Endoscopy.jpg', 'ICU.jpg', 'I floor room.jpg', 'II floor room.jpg', 'Lab.jpg',
+          'Labour room.jpg', 'NICU.jpg', 'OT.jpg', 'Pharmacy.jpg', 'Scan room.jpg', 'Xray.jpg'];
+
+        var doctors = ['DR. MURUGAPANDIYAN MD.,DM (CARDIOLOGIST)', 'DR. M. PREETHI, M.S ( OBSTETERIC AND GYNACOLOGY)', 'DR. T. SRINIVASAN, MD.,DCH ( PAEDIATRIC )', 'DR. S. SAMYUKTHA, MDS.,', 'DR.J. SATHEESH, MS.,DNB.,MCH.,( GASTRO ENTEROLOGIST )', 'DR. MARAGATHA MEENAKSHI, MBBS.,DGO., ( OBSTETERIC AND GYNACOLOGIST)', 'DR. R. RAVICHANDRAN, MS, MCH., ( PAEDIATRIC SURGEON )', 'DR. SIVAPRAKASAM ( PULMONOLOGIST )', 'DR.K.V. ASAITHAMBI, MD ( GENERAL PHYSICIAN )', 'DR. SURESH, MS ( ORTHOPAEDICIAN )',
+          'DR. VINOTH, MD., MEM., ( EMERGENCY CRITICAL )', 'DR.S. PRABHAKAR, MS., MCH ( UROLOGIST )'];
+
+        var departments = ['ANESTHESIA', 'CARDIOLOGY', 'CRITICAL CARE', 'DENTAL', 'DIABETOLOGY', 'GASTRO ENTEROLOGY', 'GASTRO INTESTINAL SURGERY', 'GENERAL MEDICINE', 'OBSTETRIC AND GYNACOLOGY', 'ORTHOPAEDIC MEDICINE', 'PAEDIATRIC', 'SONOLOGY', 'UROLOGY', 'SURGICAL ONCOLOGY'];
+
+        var services = ['ACCIDENT AND EMERGENCY CARE', 'LABORATORY', 'PHARMACY', 'AMBULANCE', 'ICU AND NICU',
+          'X-RAY', 'HEALTH CHECKUP'];
+
+        var carouselInnerTmpl = _.template($('#carouselInner').html());
+        var carouselInner = carouselInnerTmpl({'images': hospital_images});
+        $('.carousel-inner').html(carouselInner);
+
+        var carouselIndicatorsTmpl = _.template($('#carouselIndicators').html());
+        var carouselIndicators = carouselIndicatorsTmpl({'images': _.range(hospital_images.length)});
+        $('.carousel-indicators').html(carouselIndicators);
+
+        var galleryTmpl = _.template($('#gallery').html());
+        var gallery = galleryTmpl({'images': hospital_images});
+        $('#pills-gallery').html(gallery);
+
+        var navMainDropdownTmpl = _.template($('#navMainDropdown').html());
+        var navMainDropdown = navMainDropdownTmpl({'key': 'DOCTORS', 'values': doctors});
+        $('#doctors_dropdown').html(navMainDropdown);
+
+        navMainDropdown = navMainDropdownTmpl({'key': 'DEPARTMENTS', 'values': departments});
+        $('#departments_dropdown').html(navMainDropdown);
+
+        navMainDropdown = navMainDropdownTmpl({'key': 'SERVICES', 'values': services});
+        $('#services_dropdown').html(navMainDropdown);
+
+      });
+    </script>
 
   </body>
+
 </html>
