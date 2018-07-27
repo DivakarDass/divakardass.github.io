@@ -139,17 +139,19 @@ body{
 
 .alignLeft{
 	overflow-y: scroll;
-	max-height: 575px; 
+	max-height: 505px;
+	width: 58%;
 }
 
 .doctors_pic{
-	width: 100px;
-	height: 100px;
+	width: 140px;
+	height: 140px;
 }
 
 .doctors_card{
 	background: white;
 	min-height: 125px;
+	max-width: 350px;
 }
 
 .d_name{

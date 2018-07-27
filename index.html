@@ -316,7 +316,7 @@
         <%- key %>
       </a>
       <% if(key == 'MEDICAL TEAM') { %>
-        <div class="dropdown-menu navbarDropdown p-2 <% if(key == 'MEDICAL TEAM') { %> alignLeft <% } %>" aria-labelledby="navbarDropdown">
+        <div class="dropdown-menu navbarDropdown p-2 alignLeft" aria-labelledby="navbarDropdown">
           <% _.each(values, function(val, index){ %>
             <% var mod = index%2; %>
             <% if(mod == 0){ %>
@@ -324,10 +324,10 @@
             <% } %>
             <div class="col-6 p-0" id="<%- mod %>">
               <div class="row m-2 p-1 doctors_card">
-                <div class="col-4 pull-left p-0">
+                <div class="col-5 pull-left p-0">
                   <img class="doctors_pic" src="<%- val['img'] %>" />
                 </div>
-                <div class="col-8">
+                <div class="col-7">
                   <div class="d_name mb-2"><%- val['name'] %></div>
                   <div class="d_deg mb-2"><%- val['deg'] %></div>
                   <div class="d_desg mb-1"><%- val['desg'] %></div>
@@ -356,9 +356,9 @@
 
         var doctors = [{'name': 'Dr.S.MURUGAPANDIYAN', 'deg': 'M.D., D.M.,', 'desg': 'SENIOR CARDIOLOGIST', 'img':'assets/images/pranav_logo.jpg'},
             {'name': 'Dr.T.SRINIVASAN', 'deg': 'M.D., D.C.H.,', 'desg': 'SENIOR PAEDIATRICIAN & NEONATALOGIST',
-            'img':'assets/images/pranav_logo.jpg'}, {'name': 'Dr.M.PREETHI', 'deg': 'M.S.,', 'desg': 'OBSTETRICS AND GYNAECOLOGY', 'img':'assets/images/pranav_logo.jpg'},
-            {'name': 'Dr.S.SAMYUKTHA', 'deg': 'M.D.S.,', 'desg': 'ORTHODONTIST', 'img':'assets/images/pranav_logo.jpg'}, {'name': 'Dr.J.SATHEESH', 'deg': 'M.S., D.N.B., M.CH.,', 'desg': 'GASTRO ENTEROLOGIST', 'img':'assets/images/pranav_logo.jpg'},
-            {'name': 'Dr.J.MARAGATHA MEENAKSHI', 'deg': 'M.B.B.S., D.G.O.,', 'desg': 'OBSTETRICS AND GYNAECOLOGY', 'img':'assets/images/pranav_logo.jpg'}, {'name': 'Dr.R.RAVICHANDRAN', 'deg': 'M.S., M.CH.,', 'desg': 'PAEDIATRIC SURGEON', 'img':'assets/images/pranav_logo.jpg'}, {'name': 'Dr.G.RAVISHANKAR', 'deg': 'M.S., D.ORTHO., DNB (ORTHO)., MNAMS', 'desg' : 'ORTHOPAEDIC SURGEON', 'img':'assets/images/pranav_logo.jpg'},
+            'img':'assets/images/pranav_logo.jpg'}, {'name': 'Dr.M.PREETHI', 'deg': 'M.S.,', 'desg': 'OBSTETRICS AND GYNAECOLOGIST', 'img':'assets/images/pranav_logo.jpg'},
+            {'name': 'Dr.S.SAMYUKTHA', 'deg': 'M.D.S.,', 'desg': 'ORTHODONTIST', 'img':'assets/images/pranav_logo.jpg'}, {'name': 'Dr.J.SATHEESH', 'deg': 'M.S., D.N.B., M.CH.,', 'desg': 'SURGICAL GASTROENTEROLOGIST', 'img':'assets/images/pranav_logo.jpg'},
+            {'name': 'Dr.J.MARAGATHA MEENAKSHI', 'deg': 'M.B.B.S., D.G.O.,', 'desg': 'OBSTETRICS AND GYNAECOLOGIST', 'img':'assets/images/pranav_logo.jpg'}, {'name': 'Dr.R.RAVICHANDRAN', 'deg': 'M.S., M.CH.,', 'desg': 'PAEDIATRIC SURGEON', 'img':'assets/images/pranav_logo.jpg'}, {'name': 'Dr.G.RAVISHANKAR', 'deg': 'M.S., D.ORTHO., DNB (ORTHO)., MNAMS', 'desg' : 'ORTHOPAEDIC SURGEON', 'img':'assets/images/pranav_logo.jpg'},
             {'name': 'Dr.M.I.SHARMILA BANU', 'deg': 'M.B.B.S', 'desg': 'SONOLOGIST (SCAN)', 'img':'assets/images/pranav_logo.jpg'},
             {'name': 'Dr.M.KARTHIKEYAN', 'deg': 'M.D (Anes)', 'desg': 'ANESTHESIOLOGIST', 'img':'assets/images/pranav_logo.jpg'},
             {'name': 'Dr. SURESH', 'deg': 'M.S', 'desg': 'ORTHOPAEDIC SURGEON', 'img':'assets/images/pranav_logo.jpg'},
