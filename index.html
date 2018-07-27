@@ -331,9 +331,6 @@
                   <div class="d_name mb-2"><%- val['name'] %></div>
                   <div class="d_deg mb-2"><%- val['deg'] %></div>
                   <div class="d_desg mb-1"><%- val['desg'] %></div>
-                  <% if(index == 0 || index == 1) { %>
-                    <div class="d_desg">Senior Consultant</div>
-                  <% } %>
                 </div>
               </div>
             </div>
@@ -357,21 +354,21 @@
           'Dental.jpg', 'Endoscopy.jpg', 'ICU.jpg', 'I floor room.jpg', 'II floor room.jpg', 'Lab.jpg',
           'Labour room.jpg', 'NICU.jpg', 'OT.jpg', 'Pharmacy.jpg', 'Scan room.jpg', 'Xray.jpg'];
 
-        var doctors = [{'name': 'Dr.S.MURUGAPANDIYAN', 'deg': 'M.D., D.M.,', 'desg': 'CARDIOLOGIST', 'img':'assets/images/pranav_logo.jpg'},
-            {'name': 'Dr.T.SRINIVASAN', 'deg': 'M.D., D.C.H.,', 'desg': 'PAEDIATRICIAN & NEONATALOGIST',
+        var doctors = [{'name': 'Dr.S.MURUGAPANDIYAN', 'deg': 'M.D., D.M.,', 'desg': 'SENIOR CARDIOLOGIST', 'img':'assets/images/pranav_logo.jpg'},
+            {'name': 'Dr.T.SRINIVASAN', 'deg': 'M.D., D.C.H.,', 'desg': 'SENIOR PAEDIATRICIAN & NEONATALOGIST',
             'img':'assets/images/pranav_logo.jpg'}, {'name': 'Dr.M.PREETHI', 'deg': 'M.S.,', 'desg': 'OBSTETRICS AND GYNAECOLOGY', 'img':'assets/images/pranav_logo.jpg'},
             {'name': 'Dr.S.SAMYUKTHA', 'deg': 'M.D.S.,', 'desg': 'ORTHODONTIST', 'img':'assets/images/pranav_logo.jpg'}, {'name': 'Dr.J.SATHEESH', 'deg': 'M.S., D.N.B., M.CH.,', 'desg': 'GASTRO ENTEROLOGIST', 'img':'assets/images/pranav_logo.jpg'},
-            {'name': 'Dr.J.MARAGATHA MEENAKSHI', 'deg': 'M.B.B.S., D.G.O.,', 'desg': 'OBSTETRICS AND GYNAECOLOGY', 'img':'assets/images/pranav_logo.jpg'}, {'name': 'Dr.R.RAVICHANDRAN', 'deg': 'M.S., M.CH.,', 'desg': 'PAEDIATRIC SURGEON', 'img':'assets/images/pranav_logo.jpg'}, {'name': 'Dr.G.RAVISHANKAR', 'deg': 'M.S., D.ORTHO', 'desg' : 'ORTHOPAEDICIAN', 'img':'assets/images/pranav_logo.jpg'},
+            {'name': 'Dr.J.MARAGATHA MEENAKSHI', 'deg': 'M.B.B.S., D.G.O.,', 'desg': 'OBSTETRICS AND GYNAECOLOGY', 'img':'assets/images/pranav_logo.jpg'}, {'name': 'Dr.R.RAVICHANDRAN', 'deg': 'M.S., M.CH.,', 'desg': 'PAEDIATRIC SURGEON', 'img':'assets/images/pranav_logo.jpg'}, {'name': 'Dr.G.RAVISHANKAR', 'deg': 'M.S., D.ORTHO', 'desg' : 'ORTHOPAEDIC SURGEON', 'img':'assets/images/pranav_logo.jpg'},
             {'name': 'Dr.M.I.SHARMILA BANU', 'deg': 'M.B.B.S', 'desg': 'SONOLOGIST (SCAN)', 'img':'assets/images/pranav_logo.jpg'},
             {'name': 'Dr.M.KARTHIKEYAN', 'deg': 'M.D (Anes)', 'desg': 'ANESTHESIOLOGIST', 'img':'assets/images/pranav_logo.jpg'},
-            {'name': 'Dr. SURESH', 'deg': 'M.S', 'desg': 'ORTHOPAEDICIAN', 'img':'assets/images/pranav_logo.jpg'},
+            {'name': 'Dr. SURESH', 'deg': 'M.S', 'desg': 'ORTHOPAEDIC SURGEON', 'img':'assets/images/pranav_logo.jpg'},
             {'name': 'Dr.S. PRABHAKAR', 'deg': 'M.S., M.CH., D.N.B.,', 'desg': 'UROLOGIST', 'img':'assets/images/pranav_logo.jpg'},
             {'name': 'Dr. VINOTH', 'deg': 'M.D., M.E.M.,', 'desg': 'EMERGENCY CRITICAL', 'img':'assets/images/pranav_logo.jpg'}];
 
         var departments = ['ANESTHESIA', 'CARDIOLOGY', 'CRITICAL CARE', 'DENTAL', 'DIABETOLOGY', 'GASTRO ENTEROLOGY', 'GASTRO INTESTINAL SURGERY', 'GENERAL MEDICINE', 'OBSTETRIC AND GYNACOLOGY', 'ORTHOPAEDIC MEDICINE', 'PAEDIATRIC', 'SONOLOGY', 'UROLOGY', 'SURGICAL ONCOLOGY'];
 
         var services = ['ACCIDENT AND EMERGENCY CARE', 'LABORATORY', 'PHARMACY', 'AMBULANCE', 'ICU AND NICU',
-          'X-RAY', 'HEALTH CHECKUP'];
+          'X-RAY'];
 
         var carouselInnerTmpl = _.template($('#carouselInner').html());
         var carouselInner = carouselInnerTmpl({'images': hospital_images});
