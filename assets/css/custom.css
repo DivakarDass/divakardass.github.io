@@ -176,3 +176,10 @@ body{
 #feedback_message{
 	min-height: 90px;
 }
+
+.d_footer{
+	background: #458C00;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+}
